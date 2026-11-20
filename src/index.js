@@ -1,4 +1,4 @@
-import startPolling from "./polling";
+import startPolling from "./polling.js";
 import "./styles.css";
 
 const messagesBody = document.querySelector("#messages");
@@ -35,4 +35,6 @@ function renderMessages(messages) {
   });
 }
 
-startPolling(renderMessages);
+startPolling((messages) => {
+  renderMessages(messages);
+});

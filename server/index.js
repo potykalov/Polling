@@ -1,6 +1,6 @@
-const express = require("express");
-const cors = require("cors");
-const { faker } = require("@faker-js/faker");
+import express from "express";
+import cors from "cors";
+import { faker } from "@faker-js/faker";
 
 const app = express();
 const PORT = 3000;
@@ -42,4 +42,3 @@ setInterval(() => {
 app.listen(PORT, () => {
   console.log(`Server started on http://localhost:${PORT}`);
 });
-yarn add rxjs

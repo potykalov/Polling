@@ -4,12 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "keywords": [],
-  "author": "Dmitriy Potykalov <dmitriy.potykalov@gmail.com> (https://github.com/potykalov)",
-  "license": "MIT",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
     "@faker-js/faker": "^10.6.0",
     "cors": "^2.8.6",
