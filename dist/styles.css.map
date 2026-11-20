@@ -1,0 +1,1 @@
+{"version":3,"file":"styles.css","mappings":"AAAA","sources":["webpack://webpack-project/./src/styles.css"],"sourcesContent":["body {\n    margin: 0;\n    padding: 2rem;\n    font-family: system-ui, sans-serif;\n    color: #1c78c0;\n    background-color: #f5f7fa;\n}\n"],"names":[],"sourceRoot":""}
