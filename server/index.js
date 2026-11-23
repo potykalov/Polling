@@ -3,7 +3,6 @@ import cors from "cors";
 import { faker } from "@faker-js/faker";
 
 const app = express();
-const PORT = 3000;
 
 app.use(cors());
 
@@ -19,7 +18,6 @@ function generateMessage() {
   };
 }
 
-// Генерируем начальные сообщения
 for (let i = 0; i < 10; i += 1) {
   messages.push(generateMessage());
 }
@@ -34,11 +32,4 @@ app.get("/messages/unread", (req, res) => {
   });
 });
 
-// Каждые 15 секунд добавляем новое сообщение
-setInterval(() => {
-  messages.push(generateMessage());
-}, 15000);
-
-app.listen(PORT, () => {
-  console.log(`Server started on http://localhost:${PORT}`);
-});
+export default app;
