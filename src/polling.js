@@ -5,7 +5,7 @@ import { catchError, switchMap } from "rxjs/operators";
 const URL = "https://polling-5piw3r8jk-dmitriy-a76d.vercel.app/messages/unread";
 
 export default function startPolling(callback) {
-  return interval(5000)
+  return timer(0, 5000)
     .pipe(
       switchMap(() =>
         ajax.getJSON(URL).pipe(catchError(() => of({ messages: [] }))),
