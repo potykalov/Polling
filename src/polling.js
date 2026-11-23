@@ -2,7 +2,7 @@ import { interval, of } from "rxjs";
 import { ajax } from "rxjs/ajax";
 import { catchError, switchMap } from "rxjs/operators";
 
-const URL = "http://localhost:3000/messages/unread";
+const URL = "https://polling-5piw3r8jk-dmitriy-a76d.vercel.app//unread";
 
 export default function startPolling(callback) {
   return interval(5000)
