@@ -1,4 +1,4 @@
-import { interval, of } from "rxjs";
+import { timer, of } from "rxjs";
 import { ajax } from "rxjs/ajax";
 import { catchError, switchMap } from "rxjs/operators";
 
